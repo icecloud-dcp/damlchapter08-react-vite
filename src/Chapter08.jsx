@@ -287,7 +287,7 @@ function App() {
           </ul>
 
           <CodeRunner
-            title="Introductory Example: Dataset and Parameter Shapes"
+            title="Introductory Example++: Dataset and Parameter Shapes"
             description="Represent a toy dataset and parameter vector, then compute predictions using matrix multiplication."
             initialCode={`
 import numpy as np

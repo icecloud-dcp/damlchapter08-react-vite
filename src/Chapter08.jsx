@@ -166,7 +166,10 @@ exec(user_code)
         {/* Code Block */}
         <div className="p-4 border-b border-slate-800 bg-slate-950/80">
           <div className="text-xs uppercase tracking-wide text-slate-400 mb-2">Python Code</div>
-          <pre className="text-sm leading-relaxed text-slate-100 bg-slate-900 rounded-xl p-3 overflow-auto border border-slate-700">
+          <pre
+            className="text-sm leading-relaxed text-slate-100 rounded-xl p-3 overflow-auto border"
+            style={{ backgroundColor: "rgba(37, 58, 29, 1)", borderColor: "var(--color-slate-100)", textAlign: "left" }}
+          >
             {isEditing ? (
               <textarea
                 value={code}
@@ -312,7 +315,7 @@ for i, p in enumerate(preds, start=1):
           />
 
           <CodeRunner
-            title="Intro Example: Visualizing a Linear Model in 2D"
+            title="Introduction Example: Visualizing a Linear Model in 2D"
             description="Plot a simple 2D dataset and a fitted regression line to see linear algebra in action."
             initialCode={`
 import numpy as np
